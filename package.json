@@ -1,0 +1,14 @@
+{
+  "name": "twilight-of-the-gods",
+  "version": "0.0.0",
+  "license": "AGPL-3.0",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "prebuild": "rm -rf dist",
+    "build": "parcel build src/index.html --public-url ./",
+    "postbuild": "echo 'twilight-of-the-gods.com' > dist/CNAME"
+  },
+  "dependencies": {
+    "parcel": "^2.0.1"
+  }
+}
